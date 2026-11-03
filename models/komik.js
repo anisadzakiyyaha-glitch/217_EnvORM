@@ -1,5 +1,7 @@
-const komik = (sequelize, DataTypes) => {
+module.exports=(sequelize, DataTypes) => {
     const Komik = sequelize.define("Komik", {
-    });
-    return Komik;
-};
+        id:{
+            type : DataTypes.INTEGER,
+            autoIncrement:true,
+            primaryKey: true
+}
